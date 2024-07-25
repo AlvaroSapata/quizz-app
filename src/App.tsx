@@ -6,7 +6,8 @@ import { useQuestionsStore } from "./store/questions";
 
 function App() {
   const questions = useQuestionsStore((state) => state.questions);
-  console.log(questions)
+  console.log(questions, questions.length);
+  
   return (
     <main>
       <Container maxWidth="sm">
@@ -19,7 +20,8 @@ function App() {
           <JavaScriptLogo />
           <Typography variant="h2">JavaScript Quizz</Typography>
         </Stack>
-        <Start />
+        {questions.length === 0 && <Start />}
+        {questions.length > 0 && <h1>Juego</h1>}
       </Container>
     </main>
   );
