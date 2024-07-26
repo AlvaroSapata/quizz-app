@@ -1,5 +1,6 @@
 import { create } from "zustand";
 import { type Question } from "../types";
+import confetti from "canvas-confetti";
 
 interface State {
   questions: Question[];
@@ -20,7 +21,7 @@ export const useQuestionsStore = create<State>((set, get) => {
       const questions = json.sort(() => Math.random() - 0.5).slice(0, limit);
       set({ questions });
     },
-    
+
     selectAnswer: (questionId: number, answerIndex: number) => {
       const {questions} = get();
       // Usar el structuredClone para clonar el objeto
@@ -31,6 +32,7 @@ export const useQuestionsStore = create<State>((set, get) => {
       const questionInfo = newQuestions[questionIndex];
       // Verificar si la respuesta es correcta
       const isCorrectUserAnswer = questionInfo.correctAnswer === answerIndex;
+      if (isCorrectUserAnswer) confetti();
       // Actualizar la informacion en la copia de la pregunta
       newQuestions[questionIndex] = {
         ...questionInfo,
