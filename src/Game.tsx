@@ -13,26 +13,28 @@ import { atomOneDarkReasonable } from "react-syntax-highlighter/dist/esm/styles/
 
 import { type Question as QuestionType } from "./types";
 
+// Funcion que se crea una vez y se reutiliza
 const getBackgroundColor = (info: QuestionType, index: number) => {
-    const { userSelectedAnswer, correctAnswer } = info
-    // usuario no ha seleccionado nada todavía
-    if (userSelectedAnswer == null) return 'transparent'
-    // si ya selecciono pero la solución es incorrecta
-    if (index !== correctAnswer && index !== userSelectedAnswer) return 'transparent'
-    // si esta es la solución correcta
-    if (index === correctAnswer) return 'green'
-    // si esta es la selección del usuario pero no es correcta
-    if (index === userSelectedAnswer) return 'red'
-    // si no es ninguna de las anteriores
-    return 'transparent'
-  }
+  const { userSelectedAnswer, correctAnswer } = info;
+  // usuario no ha seleccionado nada todavía
+  if (userSelectedAnswer == null) return "transparent";
+  // si ya selecciono pero la solución es incorrecta
+  if (index !== correctAnswer && index !== userSelectedAnswer)
+    return "transparent";
+  // si esta es la solución correcta
+  if (index === correctAnswer) return "green";
+  // si esta es la selección del usuario pero no es correcta
+  if (index === userSelectedAnswer) return "red";
+  // si no es ninguna de las anteriores
+  return "transparent";
+};
 
 const Question = ({ info }: { info: QuestionType }) => {
-    const selectAnswer = useQuestionsStore(state => state.selectAnswer)
-  
-    const createHandleClick = (answerIndex: number) => () => {
-      selectAnswer(info.id, answerIndex)
-    }
+  const selectAnswer = useQuestionsStore((state) => state.selectAnswer);
+
+  const createHandleClick = (answerIndex: number) => () => {
+    selectAnswer(info.id, answerIndex);
+  };
 
   return (
     <Card
@@ -45,14 +47,14 @@ const Question = ({ info }: { info: QuestionType }) => {
         {info.code}
       </SyntaxHighlighter>
 
-      <List sx={{ bgcolor: '#3c4047' }} disablePadding>
+      <List sx={{ bgcolor: "#3c4047" }} disablePadding>
         {info.answers.map((answer, index) => (
           <ListItem key={index} disablePadding divider>
             <ListItemButton
               disabled={info.userSelectedAnswer != null}
               onClick={createHandleClick(index)}
               sx={{
-                backgroundColor: getBackgroundColor(info, index)
+                backgroundColor: getBackgroundColor(info, index),
               }}
             >
               <ListItemText primary={answer} sx={{ textAlign: "center" }} />
