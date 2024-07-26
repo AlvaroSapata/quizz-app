@@ -15,6 +15,7 @@ import { atomOneDarkReasonable } from "react-syntax-highlighter/dist/esm/styles/
 
 import { type Question as QuestionType } from "./types";
 import { ArrowBackIosNew, ArrowForwardIos } from "@mui/icons-material";
+import { Footer } from "./Footer";
 
 // Funcion que se crea una vez y se reutiliza
 const getBackgroundColor = (info: QuestionType, index: number) => {
@@ -96,6 +97,7 @@ export const Game = () => {
         </IconButton>
       </Stack>
       <Question info={questionInfo} />
+      <Footer />
     </>
   );
 };
