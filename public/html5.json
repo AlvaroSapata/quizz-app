@@ -4,19 +4,19 @@
     "question": "¿Cuál es el propósito de la etiqueta <header> en HTML5?",
     "code": "",
     "answers": [
-      "Definir un encabezado para un documento o sección",
       "Definir una sección de navegación",
       "Definir el pie de página de un documento o sección",
+      "Definir un encabezado para un documento o sección",
       "Definir una barra lateral"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": 2,
     "question": "¿Qué etiqueta HTML5 se usa para reproducir videos?",
     "code": "",
-    "answers": ["<video>", "<audio>", "<media>", "<source>"],
-    "correctAnswer": 0
+    "answers": ["<source>", "<audio>", "<media>", "<video>"],
+    "correctAnswer": 3
   },
   {
     "id": 3,
@@ -24,11 +24,11 @@
     "code": "",
     "answers": [
       "Definir una sección de contenido genérico",
-      "Definir una sección independiente dentro de un documento",
       "Definir una sección de navegación",
+      "Definir una sección independiente dentro de un documento",
       "Definir una sección para formularios"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 2
   },
   {
     "id": 4,
@@ -42,12 +42,12 @@
     "question": "¿Cuál es el propósito de la etiqueta <canvas> en HTML5?",
     "code": "",
     "answers": [
-      "Definir un área en la que se pueden dibujar gráficos",
       "Definir un contenedor para gráficos vectoriales",
       "Definir un área para reproducir videos",
+      "Definir un área en la que se pueden dibujar gráficos",
       "Definir un contenedor para elementos multimedia"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": 6,
@@ -72,8 +72,8 @@
     "id": 8,
     "question": "¿Qué etiqueta HTML5 se usa para definir un pie de página?",
     "code": "",
-    "answers": ["<footer>", "<foot>", "<bottom>", "<end>"],
-    "correctAnswer": 0
+    "answers": ["<end>", "<foot>", "<bottom>", "<footer>"],
+    "correctAnswer": 3
   },
   {
     "id": 9,
@@ -113,12 +113,12 @@
     "question": "¿Cuál es el propósito de la etiqueta <aside> en HTML5?",
     "code": "",
     "answers": [
-      "Definir contenido relacionado con el contenido principal",
       "Definir una sección de navegación",
       "Definir un encabezado para un documento o sección",
+      "Definir contenido relacionado con el contenido principal",
       "Definir el pie de página de un documento o sección"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": 14,
@@ -132,12 +132,12 @@
     "question": "¿Cuál es el propósito de la etiqueta <figure> en HTML5?",
     "code": "",
     "answers": [
-      "Definir contenido gráfico o ilustrativo",
       "Definir una sección de navegación",
       "Definir un pie de foto o leyenda",
-      "Definir un área en la que se pueden dibujar gráficos"
+      "Definir un área en la que se pueden dibujar gráficos",
+      "Definir contenido gráfico o ilustrativo"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": 16,
@@ -151,12 +151,12 @@
     "question": "¿Cuál es el propósito de la etiqueta <time> en HTML5?",
     "code": "",
     "answers": [
-      "Definir una fecha o una hora",
       "Definir una duración",
       "Definir un intervalo de tiempo",
-      "Definir un calendario"
+      "Definir un calendario",
+      "Definir una fecha o una hora"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": 18,
@@ -170,12 +170,12 @@
     "question": "¿Cuál es el propósito de la etiqueta <main> en HTML5?",
     "code": "",
     "answers": [
-      "Definir el contenido principal del documento",
       "Definir una sección de navegación",
       "Definir un encabezado para un documento o sección",
-      "Definir el pie de página de un documento o sección"
+      "Definir el pie de página de un documento o sección",
+      "Definir el contenido principal del documento"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": 20,

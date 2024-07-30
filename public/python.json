@@ -5,11 +5,11 @@
       "code": "print(type(3.14))",
       "answers": [
           "int",
-          "float",
           "str",
+          "float",
           "NoneType"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 2
   },
   {
       "id": 2,
@@ -40,12 +40,12 @@
       "question": "¿Cuál es la salida de este código?",
       "code": "print('Hello, ' + 'World!')",
       "answers": [
-          "HelloWorld!",
           "Hello, World!",
+          "HelloWorld!",
           "Hello,World!",
           "Hello + World!"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 0
   },
   {
       "id": 5,
@@ -77,11 +77,11 @@
       "code": "print(bool(0))",
       "answers": [
           "True",
-          "False",
           "0",
+          "False",
           "None"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 2
   },
   {
       "id": 8,
@@ -89,11 +89,11 @@
       "code": "print(bool(''))",
       "answers": [
           "True",
-          "False",
           "0",
+          "False",
           "None"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 2
   },
   {
       "id": 9,
@@ -149,11 +149,11 @@
       "code": "print(int('10') + 5)",
       "answers": [
           "105",
-          "15",
           "10.5",
-          "TypeError"
+          "TypeError",
+          "15"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 3
   },
   {
       "id": 14,
@@ -161,11 +161,11 @@
       "code": "print('Python'.upper())",
       "answers": [
           "python",
-          "PYTHON",
           "Python",
-          "PythoN"
+          "PythoN",
+          "PYTHON"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 3
   },
   {
       "id": 15,
@@ -185,11 +185,11 @@
       "code": "print(10 > 2 and 2 < 1)",
       "answers": [
           "True",
-          "False",
           "None",
-          "Error"
+          "Error",
+          "False"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 3
   },
   {
       "id": 17,
@@ -197,11 +197,11 @@
       "code": "print(not True)",
       "answers": [
           "True",
-          "False",
           "None",
-          "Error"
+          "Error",
+          "False"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 3
   },
   {
       "id": 18,

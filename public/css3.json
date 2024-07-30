@@ -23,12 +23,12 @@
     "question": "¿Cuál es la salida de este código CSS?",
     "code": "h1 { font-size: 2em; }",
     "answers": [
-      "El texto será pequeño",
       "El texto será grande",
+      "El texto será pequeño",
       "El texto tendrá un tamaño de 2 píxeles",
       "El texto tendrá un tamaño de 2 puntos"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": 4,
@@ -61,12 +61,12 @@
     "question": "¿Cuál es la salida de este código CSS?",
     "code": "a:hover { text-decoration: underline; }",
     "answers": [
-      "El texto estará subrayado siempre",
       "El texto estará subrayado cuando el cursor esté sobre el enlace",
+      "El texto estará subrayado siempre",
       "El texto no tendrá ninguna decoración",
       "El texto estará subrayado y en cursiva"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": 8,
@@ -80,12 +80,12 @@
     "question": "¿Cuál es la salida de este código CSS?",
     "code": "div { border: 1px solid black; }",
     "answers": [
-      "El borde del div será de 1 píxel, punteado y negro",
       "El borde del div será de 1 píxel, continuo y negro",
+      "El borde del div será de 1 píxel, punteado y negro",
       "El borde del div será de 1 píxel, continuo y rojo",
       "El borde del div será de 1 píxel, punteado y rojo"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": 10,
@@ -115,8 +115,8 @@
     "id": 12,
     "question": "¿Cuál es la propiedad CSS para cambiar la opacidad de un elemento?",
     "code": "div { _____ : 0.5; }",
-    "answers": ["visibility", "opacity", "transparency", "display"],
-    "correctAnswer": 1
+    "answers": ["opacity", "visibility", "transparency", "display"],
+    "correctAnswer": 0
   },
   {
     "id": 13,
@@ -125,10 +125,10 @@
     "answers": [
       "El texto será subrayado",
       "El texto será en cursiva",
-      "El texto será en negrita",
-      "El texto será normal"
+      "El texto será normal",
+      "El texto será en negrita"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 3
   },
   {
     "id": 14,
@@ -137,10 +137,10 @@
     "answers": [
       "background-color",
       "background-gradient",
-      "background-image",
-      "linear-gradient"
+      "linear-gradient",
+      "background-image"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 3
   },
   {
     "id": 15,
@@ -180,10 +180,10 @@
     "answers": [
       "border-width",
       "border-color",
-      "border-style",
-      "border-height"
+      "border-height",
+      "border-style"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 3
   },
   {
     "id": 19,
