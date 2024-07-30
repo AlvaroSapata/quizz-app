@@ -22,7 +22,7 @@ export const useQuestionsStore = create<State>()(
 
         fetchQuestions: async (limit: number) => {
           try {
-            const res = await fetch("/public/data.json"); // Ruta relativa
+            const res = await fetch("/data.json"); // Ruta relativa
             if (!res.ok) {
               throw new Error("Failed to fetch questions");
             }
