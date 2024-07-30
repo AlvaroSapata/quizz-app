@@ -1,4 +1,4 @@
-# Quiz Application
+# QuizzMe Application
 
 This is a multiple-choice quiz application based on categories. Users can select a category and see questions related to that category. The application uses React and Material-UI for the user interface and a state store to manage categories and questions.
 
@@ -111,8 +111,8 @@ Contributions are welcome! If you would like to contribute to this project, plea
 This project is licensed under the MIT License. See the LICENSE file for details. -->
 
 ## Links
-- [GitHub Repository](https://github.com/your-username/your-repository)
-- [Live Application](https://your-app-live-url.com)
+- [GitHub Repository](https://github.com/AlvaroSapata/quizz-app)
+- [Live Application](https://quizzmeapp.netlify.app/)
 
 ## Contact
 For any inquiries, please contact [alvaromfdv@gmail.com](mailto:alvaromfdv@gmail.com).
