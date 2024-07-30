@@ -18,39 +18,39 @@ export const useQuestionsStore = create<State>()(
     (set, get) => {
       return {
         questions: [],
-        currentQuestion: 0, // posicion array Questions
+        currentQuestion: 0,
 
         fetchQuestions: async (limit: number) => {
-          const res = await fetch("http://localhost:5174/data.json");
-          const json = await res.json();
-
-          const questions = json
-            .sort(() => Math.random() - 0.5)
-            .slice(0, limit);
-          set({ questions });
+          try {
+            const res = await fetch("/public/data.json"); // Ruta relativa
+            if (!res.ok) {
+              throw new Error("Failed to fetch questions");
+            }
+            const json = await res.json();
+            const questions = json
+              .sort(() => Math.random() - 0.5)
+              .slice(0, limit);
+            set({ questions });
+          } catch (error) {
+            console.error("Error fetching questions:", error);
+          }
         },
 
         selectAnswer: (questionId: number, answerIndex: number) => {
           const { questions } = get();
-          // Usar el structuredClone para clonar el objeto
           const newQuestions = structuredClone(questions);
-          // Encontrar el indice de la pregunta
           const questionIndex = newQuestions.findIndex(
             (q) => q.id === questionId
           );
-          // Obtener la informacion de la pregunta
           const questionInfo = newQuestions[questionIndex];
-          // Verificar si la respuesta es correcta
           const isCorrectUserAnswer =
             questionInfo.correctAnswer === answerIndex;
           if (isCorrectUserAnswer) confetti();
-          // Actualizar la informacion en la copia de la pregunta
           newQuestions[questionIndex] = {
             ...questionInfo,
             userSelectedAnswer: answerIndex,
             isCorrectUserAnswer,
           };
-          // Actualizar el estado
           set({ questions: newQuestions });
         },
 
