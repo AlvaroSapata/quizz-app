@@ -67,6 +67,8 @@ This will open the application in your browser at http://localhost:3000.
 ## Usage
 1. **Select a category:**  Use the CategorySelector component to choose the quiz category. The selected category will update the source from wich it loads the questions, the image and title in the application and it will Load 10 random questions.
 
+![](path/public/Usage1.png)
+
 2. **View questions:** If there are questions available for the selected category, they will be displayed in the Game component. If there are no questions, the Start component will be shown.
 
 3. **Restart:** You can press the restart button to restart the game and choose category again.
