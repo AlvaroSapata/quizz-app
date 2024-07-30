@@ -1,20 +1,21 @@
-import { Button } from '@mui/material'
-import { useQuestionsStore } from './store/questions'
-
-const LIMIT_QUESTIONS = 10
+import { Button, Stack, Typography } from '@mui/material';
+import { useQuestionsStore } from './store/questions';
+import CategorySelector from './CategorySelector';
 
 export const Start = () => {
-  const fetchQuestions = useQuestionsStore(state => state.fetchQuestions)
+  const fetchQuestions = useQuestionsStore((state) => state.fetchQuestions);
 
-  const handleClick = () => {
-    fetchQuestions(LIMIT_QUESTIONS)
-  }
+  const handleStartClick = () => {
+    fetchQuestions(10); // Ajusta el límite según tus necesidades
+  };
 
   return (
-    <div style={{ marginTop: '16px'}}>
-      <Button onClick={handleClick} variant='contained'>
-        ¡Empezar el juego!
+    <Stack spacing={2} alignItems="center">
+      <Typography variant="h4">Select a Category to Start</Typography>
+      <CategorySelector />
+      <Button variant="contained" color="primary" onClick={handleStartClick}>
+        Start Quiz
       </Button>
-    </div>
-  )
-}
+    </Stack>
+  );
+};

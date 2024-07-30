@@ -6,11 +6,13 @@ import { persist } from "zustand/middleware";
 interface State {
   questions: Question[];
   currentQuestion: number;
+  category: string; // Nueva propiedad para la categoría seleccionada
   fetchQuestions: (limit: number) => Promise<void>;
   selectAnswer: (questionId: number, answerIndex: number) => void;
   goNextQuestion: () => void;
   goPrevQuestion: () => void;
   reset: () => void;
+  setCategory: (category: string) => void; // Nuevo método para actualizar la categoría
 }
 
 export const useQuestionsStore = create<State>()(
@@ -19,12 +21,14 @@ export const useQuestionsStore = create<State>()(
       return {
         questions: [],
         currentQuestion: 0,
+        category: "general", // Categoría por defecto
 
         fetchQuestions: async (limit: number) => {
+          const { category } = get();
           try {
-            const res = await fetch("/data.json"); // Ruta relativa
+            const res = await fetch(`/${category}.json`); // Ruta basada en la categoría
             if (!res.ok) {
-              throw new Error("Failed to fetch questions");
+              throw new Error(`Failed to fetch questions: ${res.statusText}`);
             }
             const json = await res.json();
             const questions = json
@@ -74,6 +78,10 @@ export const useQuestionsStore = create<State>()(
 
         reset: () => {
           set({ questions: [], currentQuestion: 0 });
+        },
+
+        setCategory: (category: string) => {
+          set({ category });
         },
       };
     },
