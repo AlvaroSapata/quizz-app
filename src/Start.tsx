@@ -11,7 +11,7 @@ export const Start = () => {
 
   return (
     <Stack spacing={2} alignItems="center">
-      <Typography variant="h5" paddingTop={'10px'}>Select a Category to Start</Typography>
+      <Typography variant="h6" paddingTop={'10px'}>Select a Category to Start</Typography>
       <CategorySelector />
       <Button variant="contained" color="primary" onClick={handleStartClick}>
         Start Quiz

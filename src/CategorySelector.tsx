@@ -18,7 +18,6 @@ const CategorySelector = () => {
 
   const handleCategoryChange = (category: string) => {
     setSelectedCategory(category);
-    console.log(category);
   };
 
   return (
