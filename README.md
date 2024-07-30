@@ -65,15 +65,29 @@ This will open the application in your browser at http://localhost:3000.
   - **`App.tsx`**: Main component of the application.
 
 ## Usage
-1. **Select a category:**  Use the CategorySelector component to choose the quiz category. The selected category will update the source from wich it loads the questions, the image and title in the application and it will Load 10 random questions.
+1. **Select a category:**  Use the `CategorySelector` component to choose the quiz category. The selected category will update the source from wich it loads the questions, the image and title in the application and it will Load 10 random questions.
 
-![](path/public/Usage1.png)
+![Home Screen](public/Usage1.png)
 
-2. **View questions:** If there are questions available for the selected category, they will be displayed in the Game component. If there are no questions, the Start component will be shown.
+2. **View questions:** After selection, the questions will de displayed. If the answer is correct the answer will turn green, if its incorrect it will turn red and the correct answer will be shown.
+
+![Game Screen](public/Usage2.png)
 
 3. **Restart:** You can press the restart button to restart the game and choose category again.
 
 4. **Aditional info:** The game stores all the app information in `LocalStorage` so you can reload the page and keep your progress. 
+
+## ToDo
+
+- [x] Add readme.
+- [ ] Add more questions to each category.
+- [ ] Add more categories.
+- [ ] Add dark/light theme.
+- [ ] Add language selector.
+- [ ] Add localization support for multiple languages.
+- [ ] Add unit tests for key components and functionality.
+- [ ] Improve accessibility features (e.g., keyboard navigation, screen reader support).
+
 
 ## Contributing
 Contributions are welcome! If you would like to contribute to this project, please follow these steps:
