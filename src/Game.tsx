@@ -47,9 +47,11 @@ const Question = ({ info }: { info: QuestionType }) => {
     >
       <Typography variant="h5">{info.question}</Typography>
 
-      <SyntaxHighlighter language="javascript" style={atomOneDarkReasonable}>
-        {info.code}
-      </SyntaxHighlighter>
+      {info.code ? (
+        <SyntaxHighlighter language="javascript" style={atomOneDarkReasonable}>
+          {info.code}
+        </SyntaxHighlighter>
+      ) : <br/>}
 
       <List sx={{ bgcolor: "#3c4047" }} disablePadding>
         {info.answers.map((answer, index) => (
@@ -69,6 +71,7 @@ const Question = ({ info }: { info: QuestionType }) => {
     </Card>
   );
 };
+
 
 export const Game = () => {
   const questions = useQuestionsStore((state) => state.questions);

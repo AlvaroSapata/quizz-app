@@ -1,0 +1,352 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué método se utiliza para renderizar un componente en el DOM en React?",
+    "code": "",
+    "answers": [
+      "React.render()",
+      "ReactDOM.render()",
+      "React.createElement()",
+      "ReactDOM.createElement()"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 2,
+    "question": "¿Cuál es el propósito de la función `useState` en React?",
+    "code": "",
+    "answers": [
+      "Gestionar el estado dentro de un componente funcional",
+      "Crear un componente de clase",
+      "Actualizar el estado del componente en el DOM",
+      "Rendirizar componentes hijos"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 3,
+    "question": "¿Cómo se declara un componente funcional en React?",
+    "code": "",
+    "answers": [
+      "function MyComponent() { return <div>Hello</div>; }",
+      "class MyComponent extends React.Component { render() { return <div>Hello</div>; } }",
+      "const MyComponent = () => { return <div>Hello</div>; }",
+      "const MyComponent = { render() { return <div>Hello</div>; } }"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 4,
+    "question": "¿Cuál es el propósito del hook `useEffect` en React?",
+    "code": "",
+    "answers": [
+      "Ejecutar efectos secundarios en componentes funcionales",
+      "Actualizar el estado del componente",
+      "Gestionar el ciclo de vida del componente en clases",
+      "Rendizar componentes hijos"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 5,
+    "question": "¿Qué propiedad se usa para pasar datos a un componente hijo en React?",
+    "code": "",
+    "answers": ["state", "props", "context", "ref"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 6,
+    "question": "¿Cómo se puede manejar un evento en React?",
+    "code": "",
+    "answers": [
+      "Utilizando el atributo `onEvent`",
+      "Utilizando el atributo `event`",
+      "Utilizando el atributo `onEventName`",
+      "Utilizando el atributo `onEventName` con camelCase"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 7,
+    "question": "¿Qué es JSX en React?",
+    "code": "",
+    "answers": [
+      "Una extensión de sintaxis para JavaScript que permite escribir HTML en JavaScript",
+      "Un método para gestionar el estado",
+      "Un hook para efectos secundarios",
+      "Un componente de clase"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 8,
+    "question": "¿Qué hace el método `setState` en un componente de clase en React?",
+    "code": "",
+    "answers": [
+      "Actualiza el estado del componente y provoca una re-renderización",
+      "Define el estado inicial del componente",
+      "Asigna props al componente",
+      "Añade un efecto secundario al componente"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 9,
+    "question": "¿Qué es un `componentDidMount` en React?",
+    "code": "",
+    "answers": [
+      "Un método del ciclo de vida que se llama después de que el componente se monta en el DOM",
+      "Un hook para efectos secundarios",
+      "Un método para renderizar el componente",
+      "Un método que se llama antes de que el componente se monte en el DOM"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 10,
+    "question": "¿Cómo se definen las propiedades predeterminadas para un componente en React?",
+    "code": "",
+    "answers": [
+      "Definiendo `defaultProps` en el componente",
+      "Utilizando el hook `useDefaultProps`",
+      "Definiendo `props` en el constructor",
+      "Utilizando el método `setProps`"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 11,
+    "question": "¿Cómo se puede evitar la re-renderización de un componente funcional en React?",
+    "code": "",
+    "answers": [
+      "Utilizando `React.memo`",
+      "Utilizando `shouldComponentUpdate`",
+      "Utilizando `PureComponent`",
+      "Utilizando `useEffect`"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 12,
+    "question": "¿Qué es un `context` en React?",
+    "code": "",
+    "answers": [
+      "Un mecanismo para pasar datos a través del árbol de componentes sin tener que pasar props manualmente",
+      "Una extensión de `props` para componentes de clase",
+      "Un hook para manejar el estado",
+      "Un componente de alto nivel"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 13,
+    "question": "¿Cómo se maneja el enrutamiento en una aplicación React?",
+    "code": "",
+    "answers": [
+      "Utilizando React Router",
+      "Utilizando el hook `useRouter`",
+      "Utilizando `Link` y `Route`",
+      "Utilizando `history`"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 14,
+    "question": "¿Qué es un `useReducer` en React?",
+    "code": "",
+    "answers": [
+      "Un hook para manejar el estado local con un reductor",
+      "Un método para actualizar el estado en un componente de clase",
+      "Un hook para gestionar efectos secundarios",
+      "Un hook para manejar el contexto"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 15,
+    "question": "¿Qué hace el hook `useCallback` en React?",
+    "code": "",
+    "answers": [
+      "Memoriza una función para evitar su recreación en cada renderizado",
+      "Ejecuta una función de manera asincrónica",
+      "Devuelve una función de efecto secundario",
+      "Actualiza el estado del componente"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 16,
+    "question": "¿Qué es `React.Fragment`?",
+    "code": "",
+    "answers": [
+      "Un componente que permite agrupar elementos sin añadir nodos adicionales al DOM",
+      "Un componente para crear listas",
+      "Un hook para manejar el estado",
+      "Un método para gestionar eventos"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 17,
+    "question": "¿Qué hace el hook `useMemo` en React?",
+    "code": "",
+    "answers": [
+      "Memoriza un valor calculado para evitar cálculos innecesarios",
+      "Ejecuta un efecto secundario después de cada renderizado",
+      "Devuelve un valor basado en el estado",
+      "Actualiza el estado del componente"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 18,
+    "question": "¿Cuál es el propósito del método `render` en un componente de clase en React?",
+    "code": "",
+    "answers": [
+      "Devuelve el JSX que representa la UI del componente",
+      "Actualiza el estado del componente",
+      "Gestiona el ciclo de vida del componente",
+      "Define las propiedades del componente"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 19,
+    "question": "¿Cómo se define un componente de clase en React?",
+    "code": "",
+    "answers": [
+      "class MyComponent extends React.Component { render() { return <div>Hello</div>; } }",
+      "function MyComponent() { return <div>Hello</div>; }",
+      "const MyComponent = () => { return <div>Hello</div>; }",
+      "const MyComponent = { render() { return <div>Hello</div>; } }"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 20,
+    "question": "¿Qué atributo se utiliza para manejar eventos en React?",
+    "code": "",
+    "answers": ["onEventName", "event", "handleEvent", "eventName"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 21,
+    "question": "¿Cuál es la salida de este código React?",
+    "code": "function App() {\n  const [text, setText] = React.useState('Hello');\n  return <div><button onClick={() => setText('World')}>Change Text</button><p>{text}</p></div>;\n}",
+    "answers": [
+      "Un `div` con un botón que cambia el texto a 'World' y un párrafo que muestra 'World'",
+      "Un `div` con un botón que cambia el texto a 'Hello' y un párrafo que muestra 'Hello'",
+      "Un `div` con un botón que no cambia el texto y un párrafo que muestra 'Hello'",
+      "Un `div` con un botón que no hace nada y un párrafo que muestra 'World'"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 22,
+    "question": "¿Qué hace el siguiente código React?",
+    "code": "function App() {\n  const [count, setCount] = React.useState(0);\n  React.useEffect(() => {\n    console.log('Component mounted or updated');\n  });\n  return <button onClick={() => setCount(count + 1)}>{count}</button>;\n}",
+    "answers": [
+      "Imprime un mensaje en la consola cada vez que el componente se monta o actualiza",
+      "Imprime un mensaje en la consola solo cuando el componente se monta",
+      "Imprime un mensaje en la consola solo cuando el componente se actualiza",
+      "No imprime nada en la consola"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 23,
+    "question": "¿Cuál es la salida de este código React?",
+    "code": "function App() {\n  const [show, setShow] = React.useState(true);\n  return <div>{show && <p>Visible</p>}<button onClick={() => setShow(!show)}>Toggle</button></div>;\n}",
+    "answers": [
+      "Un `div` que muestra el texto 'Visible' y un botón que alterna su visibilidad",
+      "Un `div` que muestra solo el botón",
+      "Un `div` con un párrafo visible pero sin funcionalidad en el botón",
+      "Un `div` con un botón que no afecta la visibilidad del párrafo"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 24,
+    "question": "¿Qué hace el siguiente código React?",
+    "code": "function App() {\n  const [items, setItems] = React.useState(['Apple', 'Banana']);\n  const handleAddItem = () => setItems([...items, 'Orange']);\n  return <div><button onClick={handleAddItem}>Add Item</button><ul>{items.map((item, index) => <li key={index}>{item}</li>)}</ul></div>;\n}",
+    "answers": [
+      "Agrega un nuevo elemento 'Orange' a la lista cada vez que se hace clic en el botón",
+      "Muestra una lista de frutas sin permitir agregar nuevos elementos",
+      "Agrega un nuevo elemento 'Apple' a la lista cada vez que se hace clic en el botón",
+      "Muestra una lista con elementos duplicados al hacer clic en el botón"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 25,
+    "question": "¿Cuál es la salida de este código React?",
+    "code": "function App() {\n  const [value, setValue] = React.useState('');\n  return <input value={value} onChange={e => setValue(e.target.value)} />;\n}",
+    "answers": [
+      "Un campo de entrada que controla su valor con el estado `value` y se actualiza al cambiar el texto",
+      "Un campo de entrada con un valor fijo que no cambia",
+      "Un campo de entrada que muestra el texto 'value'",
+      "Un campo de entrada que no refleja el estado `value`"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 26,
+    "question": "¿Qué hace el siguiente código React?",
+    "code": "function App() {\n  return <div><h1>Hello World</h1><footer>Footer content</footer></div>;\n}",
+    "answers": [
+      "Muestra un `div` con un encabezado 'Hello World' y un pie de página con contenido 'Footer content'",
+      "Muestra solo el encabezado 'Hello World'",
+      "Muestra solo el pie de página 'Footer content'",
+      "Muestra un `div` vacío"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 27,
+    "question": "¿Cuál es la salida de este código React?",
+    "code": "function App() {\n  const [isLoggedIn, setIsLoggedIn] = React.useState(false);\n  return <div>{isLoggedIn ? <p>Welcome back!</p> : <p>Please log in</p>}</div>;\n}",
+    "answers": [
+      "Muestra 'Welcome back!' si `isLoggedIn` es verdadero, de lo contrario muestra 'Please log in'",
+      "Muestra solo 'Welcome back!'",
+      "Muestra solo 'Please log in'",
+      "No muestra nada"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 28,
+    "question": "¿Qué hace el siguiente código React?",
+    "code": "function App() {\n  const [count, setCount] = React.useState(0);\n  React.useEffect(() => {\n    if (count > 5) {\n      alert('Count exceeded 5');\n    }\n  }, [count]);\n  return <button onClick={() => setCount(count + 1)}>{count}</button>;\n}",
+    "answers": [
+      "Muestra una alerta cuando `count` supera 5 y actualiza el botón con el conteo",
+      "Muestra una alerta al hacer clic en el botón independientemente del conteo",
+      "Muestra una alerta cuando `count` es menor que 5",
+      "No muestra ninguna alerta"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 29,
+    "question": "¿Cuál es la salida de este código React?",
+    "code": "function App() {\n  const [show, setShow] = React.useState(true);\n  return <div>{show ? <p>Content</p> : null}<button onClick={() => setShow(!show)}>Toggle Content</button></div>;\n}",
+    "answers": [
+      "Un `div` que muestra 'Content' y un botón que alterna su visibilidad",
+      "Un `div` que muestra solo el botón",
+      "Un `div` que muestra solo el contenido 'Content' sin funcionalidad en el botón",
+      "Un `div` vacío y un botón que no cambia el estado"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 30,
+    "question": "¿Qué hace el siguiente código React?",
+    "code": "function App() {\n  const [text, setText] = React.useState('');\n  const handleChange = e => setText(e.target.value);\n  return <textarea value={text} onChange={handleChange} />;\n}",
+    "answers": [
+      "Muestra un área de texto cuyo valor está controlado por el estado `text` y se actualiza con el contenido del área de texto",
+      "Muestra un área de texto con un valor fijo que no cambia",
+      "Muestra un área de texto que no refleja el estado `text`",
+      "Muestra un área de texto que solo acepta texto sin actualizar el estado"
+    ],
+    "correctAnswer": 0
+  }
+]

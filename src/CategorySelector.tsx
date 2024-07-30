@@ -6,6 +6,7 @@ import { JavaScriptLogo } from "./JavaScriptLogo";
 import { Html5Logo } from "./Html5Logo";
 import { Css3Logo } from "./Css3Logo";
 import { PythonLogo } from "./PythonLogo";
+import { ReactLogo } from "./ReactLogo";
 
 const CategorySelector = () => {
   const { category, setCategory } = useQuestionsStore();
@@ -54,6 +55,14 @@ const CategorySelector = () => {
         }}
       >
         <PythonLogo />
+      </Button>
+      <Button
+        onClick={() => handleCategoryChange("react")}
+        style={{
+          border: selectedCategory === "react" ? "2px solid white" : "none",
+        }}
+      >
+        <ReactLogo />
       </Button>
       {/* Agrega más opciones según las categorías disponibles */}
     </Box>
