@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "question": "Esto es el test",
+    "question": "Esto son preguntas de HTML5",
     "code": "console.log(typeof NaN)",
     "answers": ["undefined", "NaN", "string", "number"],
     "correctAnswer": 3

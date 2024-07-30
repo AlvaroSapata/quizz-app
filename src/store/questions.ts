@@ -6,13 +6,13 @@ import { persist } from "zustand/middleware";
 interface State {
   questions: Question[];
   currentQuestion: number;
-  category: string; // Nueva propiedad para la categoría seleccionada
+  category: string;
   fetchQuestions: (limit: number) => Promise<void>;
   selectAnswer: (questionId: number, answerIndex: number) => void;
   goNextQuestion: () => void;
   goPrevQuestion: () => void;
   reset: () => void;
-  setCategory: (category: string) => void; // Nuevo método para actualizar la categoría
+  setCategory: (category: string) => void;
 }
 
 export const useQuestionsStore = create<State>()(
@@ -21,7 +21,7 @@ export const useQuestionsStore = create<State>()(
       return {
         questions: [],
         currentQuestion: 0,
-        category: "general", // Categoría por defecto
+        category: "javascript", // Categoría predeterminada
 
         fetchQuestions: async (limit: number) => {
           const { category } = get();
