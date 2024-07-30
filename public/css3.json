@@ -1,10 +1,207 @@
 [
-    {
-      "id": 1,
-      "question": "Esto son preguntas de CSS3",
-      "code": "console.log(typeof NaN)",
-      "answers": ["undefined", "NaN", "string", "number"],
-      "correctAnswer": 3
-    }
-  ]
-  
+  {
+    "id": 1,
+    "question": "¿Cuál es la salida de este código CSS?",
+    "code": "body { background-color: #000; }",
+    "answers": [
+      "El fondo será rojo",
+      "El fondo será blanco",
+      "El fondo será negro",
+      "El fondo será transparente"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 2,
+    "question": "¿Cuál es la propiedad CSS para cambiar el color del texto?",
+    "code": "p { _____ : red; }",
+    "answers": ["font-color", "text-color", "color", "background-color"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 3,
+    "question": "¿Cuál es la salida de este código CSS?",
+    "code": "h1 { font-size: 2em; }",
+    "answers": [
+      "El texto será pequeño",
+      "El texto será grande",
+      "El texto tendrá un tamaño de 2 píxeles",
+      "El texto tendrá un tamaño de 2 puntos"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 4,
+    "question": "¿Cuál es la propiedad CSS para agregar espacio dentro de un elemento?",
+    "code": "div { _____ : 10px; }",
+    "answers": ["margin", "padding", "border", "spacing"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 5,
+    "question": "¿Cuál es la salida de este código CSS?",
+    "code": "p { margin: 20px; }",
+    "answers": [
+      "Agrega espacio alrededor del contenido de un párrafo",
+      "Agrega espacio entre los bordes y el contenido de un párrafo",
+      "Agrega espacio alrededor de un párrafo",
+      "Agrega un borde de 20 píxeles a un párrafo"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 6,
+    "question": "¿Cuál es la propiedad CSS para cambiar el tipo de letra?",
+    "code": "p { _____ : Arial, sans-serif; }",
+    "answers": ["font-style", "font-weight", "font-family", "font-type"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 7,
+    "question": "¿Cuál es la salida de este código CSS?",
+    "code": "a:hover { text-decoration: underline; }",
+    "answers": [
+      "El texto estará subrayado siempre",
+      "El texto estará subrayado cuando el cursor esté sobre el enlace",
+      "El texto no tendrá ninguna decoración",
+      "El texto estará subrayado y en cursiva"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 8,
+    "question": "¿Cuál es la propiedad CSS para hacer que un elemento se muestre como un bloque?",
+    "code": "span { display: _____ ; }",
+    "answers": ["inline", "block", "inline-block", "flex"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 9,
+    "question": "¿Cuál es la salida de este código CSS?",
+    "code": "div { border: 1px solid black; }",
+    "answers": [
+      "El borde del div será de 1 píxel, punteado y negro",
+      "El borde del div será de 1 píxel, continuo y negro",
+      "El borde del div será de 1 píxel, continuo y rojo",
+      "El borde del div será de 1 píxel, punteado y rojo"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 10,
+    "question": "¿Cuál es la propiedad CSS para alinear el texto al centro?",
+    "code": "p { _____ : center; }",
+    "answers": [
+      "align-content",
+      "align-text",
+      "text-align",
+      "text-align-center"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 11,
+    "question": "¿Cuál es la salida de este código CSS?",
+    "code": "img { width: 100px; }",
+    "answers": [
+      "La imagen tendrá un ancho de 100 píxeles",
+      "La imagen tendrá un ancho de 100 puntos",
+      "La imagen tendrá un ancho de 100 ems",
+      "La imagen tendrá un ancho de 100 porcentajes"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 12,
+    "question": "¿Cuál es la propiedad CSS para cambiar la opacidad de un elemento?",
+    "code": "div { _____ : 0.5; }",
+    "answers": ["visibility", "opacity", "transparency", "display"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 13,
+    "question": "¿Cuál es la salida de este código CSS?",
+    "code": "p { font-weight: bold; }",
+    "answers": [
+      "El texto será subrayado",
+      "El texto será en cursiva",
+      "El texto será en negrita",
+      "El texto será normal"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 14,
+    "question": "¿Cuál es la propiedad CSS para aplicar un fondo degradado?",
+    "code": "div { background: _____ (red, yellow); }",
+    "answers": [
+      "background-color",
+      "background-gradient",
+      "background-image",
+      "linear-gradient"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 15,
+    "question": "¿Cuál es la salida de este código CSS?",
+    "code": "ul { list-style-type: square; }",
+    "answers": [
+      "Los elementos de la lista tendrán viñetas circulares",
+      "Los elementos de la lista tendrán viñetas cuadradas",
+      "Los elementos de la lista tendrán viñetas decimales",
+      "Los elementos de la lista no tendrán viñetas"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 16,
+    "question": "¿Cuál es la propiedad CSS para crear espacio entre elementos?",
+    "code": "div { _____ : 20px; }",
+    "answers": ["padding", "margin", "border", "spacing"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 17,
+    "question": "¿Cuál es la salida de este código CSS?",
+    "code": "p { text-transform: uppercase; }",
+    "answers": [
+      "El texto estará en minúsculas",
+      "El texto estará en mayúsculas",
+      "El texto tendrá la primera letra de cada palabra en mayúsculas",
+      "El texto no tendrá ninguna transformación"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 18,
+    "question": "¿Cuál es la propiedad CSS para cambiar el estilo de los bordes?",
+    "code": "div { _____ : dashed; }",
+    "answers": [
+      "border-width",
+      "border-color",
+      "border-style",
+      "border-height"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 19,
+    "question": "¿Cuál es la salida de este código CSS?",
+    "code": "p { line-height: 1.5; }",
+    "answers": [
+      "El texto tendrá un interlineado de 1.5 píxeles",
+      "El texto tendrá un interlineado de 1.5 puntos",
+      "El texto tendrá un interlineado de 1.5 ems",
+      "El texto tendrá un interlineado de 1.5 veces el tamaño de fuente"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 20,
+    "question": "¿Cuál es la propiedad CSS para definir el color de los enlaces visitados?",
+    "code": "a:visited { _____ : purple; }",
+    "answers": ["link-color", "visited-color", "a:visited-color", "color"],
+    "correctAnswer": 3
+  }
+]

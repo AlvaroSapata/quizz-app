@@ -82,6 +82,7 @@ export const Game = () => {
       <Stack
         direction="row"
         gap={2}
+        marginTop={2}
         alignItems="center"
         justifyContent="center"
       >

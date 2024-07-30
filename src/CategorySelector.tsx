@@ -5,6 +5,7 @@ import { Box, Button } from "@mui/material";
 import { JavaScriptLogo } from "./JavaScriptLogo";
 import { Html5Logo } from "./Html5Logo";
 import { Css3Logo } from "./Css3Logo";
+import { PythonLogo } from "./PythonLogo";
 
 const CategorySelector = () => {
   const { category, setCategory } = useQuestionsStore();
@@ -24,7 +25,8 @@ const CategorySelector = () => {
       <Button
         onClick={() => handleCategoryChange("javascript")}
         style={{
-          border: selectedCategory === "javascript" ? "2px solid white" : "none",
+          border:
+            selectedCategory === "javascript" ? "2px solid white" : "none",
         }}
       >
         <JavaScriptLogo />
@@ -44,6 +46,14 @@ const CategorySelector = () => {
         }}
       >
         <Css3Logo />
+      </Button>
+      <Button
+        onClick={() => handleCategoryChange("python")}
+        style={{
+          border: selectedCategory === "python" ? "2px solid white" : "none",
+        }}
+      >
+        <PythonLogo />
       </Button>
       {/* Agrega más opciones según las categorías disponibles */}
     </Box>

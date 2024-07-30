@@ -1,0 +1,242 @@
+[
+  {
+      "id": 1,
+      "question": "¿Cuál es la salida de este código?",
+      "code": "print(type(3.14))",
+      "answers": [
+          "int",
+          "float",
+          "str",
+          "NoneType"
+      ],
+      "correctAnswer": 1
+  },
+  {
+      "id": 2,
+      "question": "¿Cuál es la salida de este código?",
+      "code": "print(2 ** 3)",
+      "answers": [
+          "5",
+          "6",
+          "8",
+          "9"
+      ],
+      "correctAnswer": 2
+  },
+  {
+      "id": 3,
+      "question": "¿Cuál es la salida de este código?",
+      "code": "print(len('Python'))",
+      "answers": [
+          "5",
+          "6",
+          "7",
+          "8"
+      ],
+      "correctAnswer": 1
+  },
+  {
+      "id": 4,
+      "question": "¿Cuál es la salida de este código?",
+      "code": "print('Hello, ' + 'World!')",
+      "answers": [
+          "HelloWorld!",
+          "Hello, World!",
+          "Hello,World!",
+          "Hello + World!"
+      ],
+      "correctAnswer": 1
+  },
+  {
+      "id": 5,
+      "question": "¿Cuál es la salida de este código?",
+      "code": "print(10 // 3)",
+      "answers": [
+          "3.33",
+          "3.0",
+          "3",
+          "4"
+      ],
+      "correctAnswer": 2
+  },
+  {
+      "id": 6,
+      "question": "¿Cuál es la salida de este código?",
+      "code": "print(10 % 3)",
+      "answers": [
+          "1",
+          "2",
+          "3",
+          "0"
+      ],
+      "correctAnswer": 1
+  },
+  {
+      "id": 7,
+      "question": "¿Cuál es la salida de este código?",
+      "code": "print(bool(0))",
+      "answers": [
+          "True",
+          "False",
+          "0",
+          "None"
+      ],
+      "correctAnswer": 1
+  },
+  {
+      "id": 8,
+      "question": "¿Cuál es la salida de este código?",
+      "code": "print(bool(''))",
+      "answers": [
+          "True",
+          "False",
+          "0",
+          "None"
+      ],
+      "correctAnswer": 1
+  },
+  {
+      "id": 9,
+      "question": "¿Cuál es la salida de este código?",
+      "code": "print(list(range(3)))",
+      "answers": [
+          "[0, 1, 2]",
+          "[1, 2, 3]",
+          "[0, 1, 2, 3]",
+          "[1, 2, 3, 4]"
+      ],
+      "correctAnswer": 0
+  },
+  {
+      "id": 10,
+      "question": "¿Cuál es la salida de este código?",
+      "code": "print(sum([1, 2, 3]))",
+      "answers": [
+          "5",
+          "6",
+          "7",
+          "8"
+      ],
+      "correctAnswer": 1
+  },
+  {
+      "id": 11,
+      "question": "¿Cuál es la salida de este código?",
+      "code": "print(2 == 2.0)",
+      "answers": [
+          "True",
+          "False",
+          "None",
+          "TypeError"
+      ],
+      "correctAnswer": 0
+  },
+  {
+      "id": 12,
+      "question": "¿Cuál es la salida de este código?",
+      "code": "print(4 / 2)",
+      "answers": [
+          "2",
+          "2.0",
+          "2.00",
+          "2.000"
+      ],
+      "correctAnswer": 1
+  },
+  {
+      "id": 13,
+      "question": "¿Cuál es la salida de este código?",
+      "code": "print(int('10') + 5)",
+      "answers": [
+          "105",
+          "15",
+          "10.5",
+          "TypeError"
+      ],
+      "correctAnswer": 1
+  },
+  {
+      "id": 14,
+      "question": "¿Cuál es la salida de este código?",
+      "code": "print('Python'.upper())",
+      "answers": [
+          "python",
+          "PYTHON",
+          "Python",
+          "PythoN"
+      ],
+      "correctAnswer": 1
+  },
+  {
+      "id": 15,
+      "question": "¿Cuál es la salida de este código?",
+      "code": "print('abc' * 3)",
+      "answers": [
+          "abcabcabc",
+          "abc abc abc",
+          "abc, abc, abc",
+          "Error"
+      ],
+      "correctAnswer": 0
+  },
+  {
+      "id": 16,
+      "question": "¿Cuál es la salida de este código?",
+      "code": "print(10 > 2 and 2 < 1)",
+      "answers": [
+          "True",
+          "False",
+          "None",
+          "Error"
+      ],
+      "correctAnswer": 1
+  },
+  {
+      "id": 17,
+      "question": "¿Cuál es la salida de este código?",
+      "code": "print(not True)",
+      "answers": [
+          "True",
+          "False",
+          "None",
+          "Error"
+      ],
+      "correctAnswer": 1
+  },
+  {
+      "id": 18,
+      "question": "¿Cuál es la salida de este código?",
+      "code": "print(3 in [1, 2, 3])",
+      "answers": [
+          "True",
+          "False",
+          "None",
+          "Error"
+      ],
+      "correctAnswer": 0
+  },
+  {
+      "id": 19,
+      "question": "¿Cuál es la salida de este código?",
+      "code": "print(len([1, 2, 3, 4]))",
+      "answers": [
+          "3",
+          "4",
+          "5",
+          "6"
+      ],
+      "correctAnswer": 1
+  },
+  {
+      "id": 20,
+      "question": "¿Cuál es la salida de este código?",
+      "code": "print('Hello'.replace('l', 'x'))",
+      "answers": [
+          "Hexxo",
+          "Hexlo",
+          "Helxo",
+          "Hxxlo"
+      ],
+      "correctAnswer": 3
+  }
+]
