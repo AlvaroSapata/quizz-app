@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useQuestionsStore } from "./store/questions";
+import { useQuestionsStore } from "../store/questions";
 import { Box, Button } from "@mui/material";
 
 import { JavaScriptLogo } from "./JavaScriptLogo";

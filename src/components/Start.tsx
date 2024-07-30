@@ -1,5 +1,5 @@
 import { Button, Stack, Typography } from '@mui/material';
-import { useQuestionsStore } from './store/questions';
+import { useQuestionsStore } from '../store/questions';
 import CategorySelector from './CategorySelector';
 
 export const Start = () => {

@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { type Question } from "../types";
+import { type Question } from "../types/types";
 import confetti from "canvas-confetti";
 import { persist } from "zustand/middleware";
 

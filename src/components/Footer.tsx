@@ -1,6 +1,6 @@
 import { Button } from '@mui/material'
-import { useQuestionsData } from './hooks/useQuestionsData'
-import { useQuestionsStore } from './store/questions'
+import { useQuestionsData } from '../hooks/useQuestionsData'
+import { useQuestionsStore } from '../store/questions'
 
 export const Footer = () => {
   const { correct, incorrect, unanswered } = useQuestionsData()

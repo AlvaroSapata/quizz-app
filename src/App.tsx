@@ -1,13 +1,13 @@
 import "./App.css";
 import { Container, Stack, Typography } from "@mui/material";
-import { JavaScriptLogo } from "./JavaScriptLogo";
-import { Html5Logo } from "./Html5Logo";
-import { Css3Logo } from "./Css3Logo";
-import { PythonLogo } from "./PythonLogo";
-import { ReactLogo } from "./ReactLogo";
-import { Start } from "./Start";
+import { JavaScriptLogo } from "./components/JavaScriptLogo";
+import { Html5Logo } from "./components/Html5Logo";
+import { Css3Logo } from "./components/Css3Logo";
+import { PythonLogo } from "./components/PythonLogo";
+import { ReactLogo } from "./components/ReactLogo";
+import { Start } from "./components/Start";
 import { useQuestionsStore } from "./store/questions";
-import { Game } from "./Game";
+import { Game } from "./components/Game";
 
 // Define el tipo de las categorías
 type Category = "javascript" | "html5" | "css3" | "python" | "react";
